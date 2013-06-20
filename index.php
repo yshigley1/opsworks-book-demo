@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>OpsWorks Demo</title>
+    <title>OpsWorks Book Demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading Bootstrap -->
@@ -24,7 +24,7 @@
 
     <div class="container">
         <div class="page-header">
-            <h1>OpsWorks Demo</h1>
+            <h1>OpsWorks Book Demo</h1>
         </div>
         <p class="lead">PHP demo page for use with AWS OpsWorks</p>
         
@@ -37,43 +37,40 @@
                     <th class="span1">View</th>
                 </tr>
             </thead>
+
+            <?php
+                
+                include("includes/dbconnect.php");
+
+                $query = "SELECT * FROM templates";
+                $result = $mysqli->query($query) or die($mysqli->error.__LINE__);
+
+                while($row = $result->fetch_assoc()) {
+                    
+            ?>
+
             <tbody>
                 <tr>
-                    <td>WrapBootstrap</td>
-                    <td>Themes and layouts for Bootsrap.</td>
-                    <td style="overflow: auto;">
-                        <a href="https://wrapbootstrap.com/?ref=bsn" target="_blank" title="WrapBootstrap">https://wrapbootstrap.com/?ref...</a>
-                    </td>
-                    <td>
-                        <a class="btn btn-block btn-info" href="https://wrapbootstrap.com/?ref=bsn" target="_blank">Go</a>
-                    </td>
+                    <td><?php echo stripslashes($row['title']); ?></td>
+                    <td><?php echo stripslashes($row['description']); ?></td>
+                    <td style="overflow: auto;"><a href="<?php echo stripslashes($row['url']); ?>"><?php echo stripslashes($row['url']); ?></a></td>
+                    <td><a class="btn btn-block btn-info" href="<?php echo stripslashes($row['url']); ?>" target="_blank">Go</a></td>
                 </tr>
-                <tr>
-                    <td>Bootstraptor free KIT Twitter Bootstrap templates</td>
-                    <td>WHAT IN THIS BOX Gradually accumulated some templates, we have decided to provide it for Bootstrap community. Free of charge to download a set of basic template build with Bootstrap framework on his popular base.</td>
-                    <td style="overflow: auto;">
-                        <a href="http://www.bootstraptor.com" target="_blank" title="Bootstraptor free KIT Twitter Bootstrap templates">http://www.bootstraptor.com</a>
-                    </td>
-                    <td>
-                        <a class="btn btn-block btn-info" href="http://designmodo.com/shop/?u=80" target="_blank">Go</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Bootstrap Fireworks Toolkit</td>
-                    <td>The original Bootstrap Toolkit for Adobe Fireworks. It contains all of the version 2.1 ui elements created as reusable vectors. Copy and Paste them over to your new Fireworks document to create your designs. Perfect for creating web apps!</td>
-                    <td style="overflow: auto;">
-                        <a href="http://www.fireworkstoolkits.com/" target="_blank" title="Bootstrap Fireworks Toolkit">http://www.fireworkstoolkits.c...</a>
-                    </td>
-                    <td>
-                        <a class="btn btn-block btn-info" href="http://www.fireworkstoolkits.com/" target="_blank">Go</a>
-                    </td>
             </tbody>
+
+            <?php 
+                
+                }
+                
+                mysqli_close($mysqli);
+            ?>
+
         </table>
 
     </div>
     <!-- /.container -->
 
-    <br /><br /><br /><br />
+    <br />
 
     <div id="footer">
       <div class="container">
