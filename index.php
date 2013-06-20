@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>OpsWorks Demo</title>
+    <title>OpsWorks Book Demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading Bootstrap -->
@@ -24,7 +24,7 @@
 
     <div class="container">
         <div class="page-header">
-            <h1>OpsWorks Demo</h1>
+            <h1>OpsWorks Book Demo</h1>
         </div>
         <p class="lead">PHP demo page for use with AWS OpsWorks</p>
         
@@ -38,16 +38,6 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>WrapBootstrap</td>
-                    <td>Themes and layouts for Bootsrap.</td>
-                    <td style="overflow: auto;">
-                        <a href="https://wrapbootstrap.com/?ref=bsn" target="_blank" title="WrapBootstrap">https://wrapbootstrap.com/?ref...</a>
-                    </td>
-                    <td>
-                        <a class="btn btn-block btn-info" href="https://wrapbootstrap.com/?ref=bsn" target="_blank">Go</a>
-                    </td>
-                </tr>
                 <tr>
                     <td>Bootstraptor free KIT Twitter Bootstrap templates</td>
                     <td>WHAT IN THIS BOX Gradually accumulated some templates, we have decided to provide it for Bootstrap community. Free of charge to download a set of basic template build with Bootstrap framework on his popular base.</td>
@@ -67,13 +57,34 @@
                     <td>
                         <a class="btn btn-block btn-info" href="http://www.fireworkstoolkits.com/" target="_blank">Go</a>
                     </td>
+                </tr>
+                <tr>
+                    <td>How To Build and Customize Your Own Bootstrap Theme</td>
+                    <td>A guide on quickly choosing the right colors for your bootstrap theme and how to efficiently build said theme. Also includes other resources and a list of unique sites built with Bootstrap.</td>
+                    <td style="overflow: auto;">
+                        <a href="http://antjanus.com/blog/web-development-tutorials/how-to-build-your-own-bootstrap-theme/" target="_blank" title="How To Build and Customize Your Own Bootstrap Theme">http://antjanus.com/blog/web-d...</a>
+                    </td>
+                    <td>
+                        <a class="btn btn-block btn-info" href="http://antjanus.com/blog/web-development-tutorials/how-to-build-your-own-bootstrap-theme/" target="_blank">Go</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bootstrap Infographic</td>
+                    <td>A very nice interactive inforgraphic about Twitter Bootstrap</td>
+                    <td>
+                        <a href="http://www.templatemonster.com/infographics/bootstrap-interactive-infographics.php" target="_blank" title="Bootstrap Infographic">http://www.templatemonster.com...</a>
+                    </td>
+                    <td>
+                        <a class="btn btn-block btn-info" href="http://www.templatemonster.com/infographics/bootstrap-interactive-infographics.php" target="_blank">Go</a>
+                    </td>
+                </tr>
             </tbody>
         </table>
 
     </div>
     <!-- /.container -->
 
-    <br /><br /><br /><br />
+    <br />
 
     <div id="footer">
       <div class="container">
