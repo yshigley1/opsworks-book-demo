@@ -54,7 +54,7 @@
                     <td><?php echo stripslashes($row['title']); ?></td>
                     <td><?php echo stripslashes($row['description']); ?></td>
                     <td style="overflow: auto;"><a href="<?php echo stripslashes($row['url']); ?>"><?php echo stripslashes($row['url']); ?></a></td>
-                    <td><a class="btn btn-block btn-info" href="<?php echo stripslashes($row['url']); ?>" target="_blank">Go</a></td>
+                    <td><a class="btn btn-block btn-inverse" href="<?php echo stripslashes($row['url']); ?>" target="_blank">Go</a></td>
                 </tr>
             </tbody>
 
