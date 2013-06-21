@@ -24,7 +24,7 @@
 
     <div class="container">
         <div class="page-header">
-            <h1>OpsWorks Book Demo</h1>
+            <h3>OpsWorks Book Demo</h3>
         </div>
         <p class="lead">PHP demo page for use with AWS OpsWorks</p>
         
